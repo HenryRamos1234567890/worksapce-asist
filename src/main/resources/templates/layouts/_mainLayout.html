@@ -16,6 +16,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" th:href="@{plugins/fontawesome-free/css/all.min.css}">
     <!-- Theme style -->
     <link rel="stylesheet" th:href="@{dist/css/adminlte.min.css}">
+
+    <script th:src="@{/plugins/sweetalert2/sweetalert2.all.min.js}"></script>
+
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -32,6 +36,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a th:href="@{/Grupos}" class="nav-link">Grupos</a>
             </li>
         </ul>
 
